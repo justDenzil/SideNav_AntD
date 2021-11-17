@@ -32,10 +32,12 @@ class SideNav extends React.Component {
         <Button type="primary" onClick={this.toggleCollapsed} style={{ marginBottom: 16 }}>
           {React.createElement(this.state.collapsed ? MenuUnfoldOutlined : MenuFoldOutlined)}
         </Button>
+        <div className="side-nav-container">
         <Menu
           defaultSelectedKeys={['1']}
           inlineCollapsed={this.state.collapsed}
         >
+          <div className="side-nav-top-section-container">
           <Menu.Item key="1" icon={<PieChartOutlined />}>
             Dashboard
           </Menu.Item>
@@ -51,8 +53,20 @@ class SideNav extends React.Component {
           <Menu.Item key="4" icon={<ContainerOutlined />}>
             Deep View
           </Menu.Item>
-          
+          </div>
+          <div className="side-nav-bottom-section-container">
+          <Menu.Item key="3" icon={<ContainerOutlined />}>
+            Notifications
+          </Menu.Item>
+          <Menu.Item key="4" icon={<ContainerOutlined />}>
+            Settings
+          </Menu.Item>
+          <Menu.Item key="4" icon={<ContainerOutlined />}>
+            Umesh
+          </Menu.Item>
+          </div>
         </Menu>
+        </div>
       </div>
     );
   }
