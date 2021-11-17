@@ -15,7 +15,7 @@ import {
 
 const { SubMenu } = Menu;
 
-class App extends React.Component {
+class SideNav extends React.Component {
   state = {
     collapsed: false,
   };
@@ -34,8 +34,6 @@ class App extends React.Component {
         </Button>
         <Menu
           defaultSelectedKeys={['1']}
-          defaultOpenKeys={['sub1']}
-          mode="inline"
           inlineCollapsed={this.state.collapsed}
         >
           <Menu.Item key="1" icon={<PieChartOutlined />}>
@@ -60,4 +58,4 @@ class App extends React.Component {
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('container'));
+ReactDOM.render(<SideNav />, document.getElementById('container'));
