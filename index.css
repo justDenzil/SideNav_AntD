@@ -1,0 +1,7 @@
+.ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left {
+	border-right: 0px solid transparent;
+}
+
+body {
+  background-color: #F7F8FD;
+}

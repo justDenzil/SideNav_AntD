@@ -36,6 +36,7 @@ class SideNav extends React.Component {
         <Menu
           defaultSelectedKeys={['1']}
           inlineCollapsed={this.state.collapsed}
+          style={{ width: 240 }}
         >
           <div className="side-nav-top-section-container">
           <Menu.Item key="1" icon={<PieChartOutlined />}>
